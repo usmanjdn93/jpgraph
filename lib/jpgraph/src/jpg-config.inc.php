@@ -134,13 +134,4 @@ define('DEFAULT_THEME_CLASS', 'UniversalTheme');
 
 define('SUPERSAMPLING', true);
 define('SUPERSAMPLING_SCALE', 1);
-// Patch for Debian PHP
-define('ANTIALIASING', false);
-
-if(!ANTIALIASING){
-    function imageantialias($image, $enabled){
-        return true;
-    }
-}
-// End
 ?>
